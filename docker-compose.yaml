@@ -1,6 +1,6 @@
 services:
   api01:
-    container_name: api01
+    container_name: fabri-api01
     image: actividad-docker-api:1.0
     environment:
       MESSAGE: "Hola, soy ${MI_NOMBRE} ${APELLIDO}"
@@ -8,7 +8,7 @@ services:
       - "3000:3000"
 
   api02:
-    container_name: api02
+    container_name: fabri-api02
     image: actividad-docker-api:1.0
     environment:
       MESSAGE: "Hola, soy ${MI_NOMBRE} ${APELLIDO}"
@@ -16,7 +16,7 @@ services:
       - "3001:3000"
 
   api03:
-    container_name: api03
+    container_name: fabri-api03
     image: actividad-docker-api:1.0
     environment:
       MESSAGE: "Hola, soy ${MI_NOMBRE} ${APELLIDO}"
@@ -24,6 +24,7 @@ services:
       - "3002:3000"
 
   db:
+    container_name: fabri-postgres
     image: postgres:13
     environment:
       POSTGRES_DB: mydatabase
