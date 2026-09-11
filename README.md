@@ -93,4 +93,7 @@ Respuestas de las tres API desde la terminal.
 
 ## Créditos
 
+- Alumno: Fabrizzio Martin Gutierrez Gamboa.
+- ID: 000295267.
 - Docente: Walter Ivan Leturia Rodriguez.
+- API original: Nobuyuki Matsui. Licencia en api/LICENSE.

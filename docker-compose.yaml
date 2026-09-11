@@ -1,37 +1,37 @@
 services:
   api01:
     container_name: fabri-api01
-    image: actividad-docker-api:1.0
-    environment:
-      MESSAGE: "Hola, soy ${MI_NOMBRE} ${APELLIDO}"
+    image: nmatsui/hello-world-api
     ports:
       - "3000:3000"
+    environment:
+      - MESSAGE=Fabrizzio Gutierrez copia 1
 
   api02:
     container_name: fabri-api02
-    image: actividad-docker-api:1.0
-    environment:
-      MESSAGE: "Hola, soy ${MI_NOMBRE} ${APELLIDO}"
+    image: nmatsui/hello-world-api
     ports:
       - "3001:3000"
+    environment:
+      - MESSAGE=Fabrizzio Gutierrez copia 2
 
   api03:
     container_name: fabri-api03
-    image: actividad-docker-api:1.0
-    environment:
-      MESSAGE: "Hola, soy ${MI_NOMBRE} ${APELLIDO}"
+    image: nmatsui/hello-world-api
     ports:
       - "3002:3000"
+    environment:
+      - MESSAGE=Fabrizzio Gutierrez copia 3
 
   db:
     container_name: fabri-postgres
     image: postgres:13
     environment:
-      POSTGRES_DB: mydatabase
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=mydatabase
+      - POSTGRES_USER=user
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
 volumes:
-    postgres_data:
+  postgres_data:
