@@ -1,0 +1,8 @@
+services:
+  api01:
+    container_name: api01
+    build: ./api
+    environment:
+      MESSAGE: "Hola, soy ${MI_NOMBRE} ${APELLIDO}"
+    ports:
+      - "3000:3000"
