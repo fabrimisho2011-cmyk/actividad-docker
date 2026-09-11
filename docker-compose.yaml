@@ -1,8 +1,24 @@
 services:
   api01:
     container_name: api01
-    build: ./api
+    image: actividad-docker-api:1.0
     environment:
       MESSAGE: "Hola, soy ${MI_NOMBRE} ${APELLIDO}"
     ports:
       - "3000:3000"
+
+  api02:
+    container_name: api02
+    image: actividad-docker-api:1.0
+    environment:
+      MESSAGE: "Hola, soy ${MI_NOMBRE} ${APELLIDO}"
+    ports:
+      - "3001:3000"
+
+  api03:
+    container_name: api03
+    image: actividad-docker-api:1.0
+    environment:
+      MESSAGE: "Hola, soy ${MI_NOMBRE} ${APELLIDO}"
+    ports:
+      - "3002:3000"
