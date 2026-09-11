@@ -85,6 +85,12 @@ Bind mount y tmpfs son alternativas de montaje, distintas de los volúmenes admi
 
 Los avances se registraron con Conventional Commits usando feat, fix, chore y docs.
 
+## Evidencia
+
+Respuestas de las tres API desde la terminal.
+
+![Respuestas de las API](img/imagen_api01-02-03.png)
+
 ## Créditos
 
 - Docente: Walter Ivan Leturia Rodriguez.
